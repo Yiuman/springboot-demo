@@ -1,15 +1,22 @@
 package kam.yiuman.demo.pojo;
 
+import javax.persistence.*;
+
+@Table(name = "ym_user")
 public class User {
 
     /**
      * ID
      */
+    @Id
+    @Column(name = "user_Id")
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long userId;
 
     /**
      * 用户编码
      */
+    @Column(name = "user_UUID")
     private String userUUID;
 
     /**
