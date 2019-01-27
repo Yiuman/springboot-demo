@@ -1,6 +1,6 @@
-package kam.yiuman.demo.service;
+package kam.yiuman.bigeyes.service;
 
-import kam.yiuman.demo.common.SysMapper;
+import kam.yiuman.bigeyes.common.SysMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;

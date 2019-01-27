@@ -1,10 +1,8 @@
-package kam.yiuman.demo.controller;
+package kam.yiuman.bigeyes.controller;
 
-import kam.yiuman.demo.pojo.User;
-import org.springframework.beans.factory.annotation.Autowired;
+import kam.yiuman.bigeyes.pojo.User;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
@@ -22,18 +20,11 @@ public class DemoController {
         return "index";
     }
 
-    @RequestMapping("maptest")
-    public Map<String,String> jsonTest(){
-        Map<String,String> map = new HashMap<String, String>();
-        map.put("sssss","sssss");
-        map.put("aaaaa","aaaaa");
+    @RequestMapping("usermap")
+    public Map<String, String> getUser(User user) {
+        Map<String, String> map = new HashMap<String, String>();
+        map.put("user", user.toString());
         return map;
     }
 
-    @RequestMapping("usermap")
-    public Map<String,String> getUser(User user){
-        Map<String,String> map = new HashMap<String, String>();
-        map.put("user",user.toString());
-        return map;
-    }
 }

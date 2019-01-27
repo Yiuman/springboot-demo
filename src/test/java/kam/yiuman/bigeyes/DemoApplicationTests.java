@@ -1,8 +1,5 @@
-package kam.yiuman.demo;
+package kam.yiuman.bigeyes;
 
-import kam.yiuman.demo.pojo.User;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package kam.yiuman.demo.pojo;
+package kam.yiuman.bigeyes.pojo;
 
 import javax.persistence.*;
 

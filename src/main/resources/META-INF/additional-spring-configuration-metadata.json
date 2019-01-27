@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "spring.type",
+      "type": "java.lang.String",
+      "description": "Description for spring.type."
+    },
+    {
+      "name": "wx.token",
+      "type": "java.lang.String",
+      "description": "Description for wx.token."
+    }
+  ] }

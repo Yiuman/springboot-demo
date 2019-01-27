@@ -1,22 +1,27 @@
+server:
+ port: 80
 
 spring:
+#把微信配置引入进来
+  profiles:
+    include: wechat
   type: com.jolbox.bonecp.BoneCPDataSource
+
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/yiumantest
     username: root
     password: root
 
-
 mybatis:
     #定义实体扫描包
-    type-aliases-package: kam.yiuman.demo.pojo
+    type-aliases-package: kam.yiuman.bigeyes.pojo
     #定义Mybasits配置路径(不一定会用上)
     mapper-locations: classpath:mapper/*.xml
 
 mapper:
     #定义扫描的Mapper
     mappers:
-        - kam.yiuman.demo.common.SysMapper
+        - kam.yiuman.bigeyes.common.SysMapper
     not-empty: false
     identity: MYSQL
